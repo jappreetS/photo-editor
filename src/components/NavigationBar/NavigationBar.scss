@@ -1,0 +1,52 @@
+@import './../../global/styles/common.scss';
+
+.NavigationBar {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    li {
+      background-color: #19191B;
+      width: 33.33%;
+      padding: 15px 0;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: #fff;
+        &:focus {
+          color: #f00;
+          font-size: 20px;
+        }
+      }
+    }
+    li.active {
+      a {
+        color: #f00;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .NavigationBar {
+    ul {
+      li {
+        font-size: 14px;
+        a {
+          &:focus {
+            font-size: 16px;
+          }
+        }
+      }
+      li.active {
+        font-size: 16px;
+      }
+    }
+  }
+}

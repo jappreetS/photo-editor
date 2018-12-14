@@ -1,0 +1,182 @@
+$root: '.profile-container';
+
+#{$root} {
+  background-color: #F4B663;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Sweater', sans-serif;
+  .profileContent {
+    background-color: #252525;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+    &-profileImage {
+      width: 30%;
+      padding: 30px 0 0 30px;
+      .image {
+        width: 175px;
+        height: 175px;
+      }
+    }
+    &-profileData {
+      width: 40%;
+      padding-top: 40px;
+      .name {
+        color: #fff;
+        &-primary {
+          font-size: 36px;
+        }
+        &-secondary {
+          font-size: 14px;
+          padding-left: 5px;
+        }
+      }
+      .contact {
+        margin-top: 40px;
+        padding-left: 5px;
+        ul {
+          list-style: none;
+          padding-left: 0;
+          columns: 2;
+        }
+        .row {
+          .title {
+            color: #F4B663;
+          }
+          .details {
+            color: #bdb8b8;
+
+            .address {
+              display: inline-block;
+              line-height: 1.3;
+            }
+          }
+        }
+      }
+    }
+    &-edit {
+      width: 20%;
+      color: #fff;
+      text-align: right;
+      padding-right: 10px;
+      .editText {
+        font-size: 20px;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1299px) {
+  #{$root} {
+    padding: 75px 0;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  #{$root} {
+    padding: 60px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #{$root} {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #{$root} {
+    padding: 25px 0;
+    .profileContent {
+      display: block;
+      &-profileImage {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        .image {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      &-profileData {
+        width: 100%;
+        padding-top: 20px;
+        .name {
+          text-align: center;
+          &-primary {
+            font-size: 28px;
+          }
+          &-secondary {
+            font-size: 14px;
+            padding-left: 0;
+          }
+        }
+        .contact {
+          margin-top: 30px;
+          padding-left: 0;
+          font-size: 15px;
+          ul {
+            li.title {
+              text-align: right;
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+      &-edit {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-top: 20px;
+        .editText {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 420px) {
+  #{$root} {
+    .profileContent {
+      &-profileImage {
+        .image {
+          width: 125px;
+          height: 125px;
+        }
+      }
+      &-profileData {
+        padding-top: 15px;
+        .name {
+          &-primary {
+            font-size: 24px;
+          }
+          &-secondary {
+            font-size: 12px;
+            padding-left: 0;
+          }
+        }
+        .contact {
+          margin-top: 20px;
+          margin-left: -20px;
+          padding-left: 0;
+          font-size: 13px;
+          ul {
+            li.title {
+              text-align: right;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      &-edit {
+        padding-top: 15px;
+        .editText {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

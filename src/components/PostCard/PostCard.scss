@@ -1,0 +1,159 @@
+@import './../../global/styles/common.scss';
+
+.body-container {
+  background-color: #F4B663;
+  padding: 100px 0;
+}
+
+.section-container {
+  background-color: #252525;
+  .row.second {
+    display: flex;
+    padding-bottom: 75px;
+  }
+  ul {
+    list-style: none;
+  }
+  .image-container {
+    margin-right: 20px;
+    img {
+      width: 780px;
+      height: 510px;
+    }
+  }
+
+  .filter-section {
+    max-width: 330px;
+    .filter-container {
+      font-family: 'Sweater', sans-serif;
+      .image-row-1 {
+        display: flex;
+        margin-top: 10px;
+      }
+    }
+
+    .slide-container {
+      font-family: 'Sweater', sans-serif;
+      padding: 10px;
+      p {
+        color: #fff;
+      }
+      .slider {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1299px) {
+  .body-container {
+    padding: 75px 0;
+  }
+
+  .section-container {
+    .row.second {
+      padding-bottom: 70px;
+    }
+    .image-container {
+      margin-right: 15px;
+      img {
+        width: 630px;
+        height: 427px;
+      }
+    }
+
+    .filter-section {
+      max-width: 258px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .body-container {
+    padding: 60px 0;
+  }
+  .section-container {
+    .row.second {
+      padding-bottom: 60px;
+    }
+    .image-container {
+      margin-right: 15px;
+      img {
+        width: 558px;
+        height: 393px;
+      }
+    }
+
+    .filter-section {
+      max-width: 258px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .body-container {
+    padding: 50px 0;
+  }
+  .section-container {
+    .row.second {
+      display: block;
+      padding-bottom: 25px;
+    }
+    .image-container {
+      margin-right: 0;
+      padding: 0 25px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .filter-section {
+      display: flex;
+      padding: 0 25px;
+      max-width: 100%;
+      .filter-container {
+        min-width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .body-container {
+    padding: 25px 0;
+  }
+  .section-container {
+    .row.second {
+      display: block;
+      padding-bottom: 30px;
+    }
+    .image-container {
+      margin-right: 0;
+      padding: 0 20px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .filter-section {
+      display: block;
+      padding: 0 20px;
+      max-width: 100%;
+      .filter-container {
+        min-width: 100%;
+        .image-row-1 {
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .slide-container {
+        text-align: center;
+        .slider {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
