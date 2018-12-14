@@ -3,7 +3,7 @@ React Application has few Responsive web pages with the multiple common componen
 
 ## Technologies used:
 1. React
-2. HTML5
+2. HTML
 3. CSS
 4. SCSS
 
